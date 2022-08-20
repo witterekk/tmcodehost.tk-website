@@ -1,0 +1,412 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  background: #060818; }
+
+.form-container {
+  display: flex; }
+
+.form-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+  .form-form .form-form-wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    min-width: 311px;
+    min-height: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center; }
+  .form-form .form-container {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    padding: .71428571rem 2.85714286rem;
+    width: 100%;
+    min-height: 100%; }
+    .form-form .form-container h1 {
+      color: #bfc9d4; }
+    .form-form .form-container .form-content {
+      display: block;
+      width: 100%; }
+  .form-form .form-form-wrap .user-meta {
+    margin-bottom: 35px; }
+    .form-form .form-form-wrap .user-meta img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 4px solid rgba(59, 63, 92, 0.25); }
+    .form-form .form-form-wrap .user-meta div {
+      align-self: center; }
+    .form-form .form-form-wrap .user-meta p {
+      font-size: 31px;
+      color: #bfc9d4;
+      margin-bottom: 0; }
+  .form-form .form-form-wrap h1 .brand-name {
+    color: #1B55E2;
+    font-weight: 600; }
+  .form-form .form-form-wrap p.signup-link {
+    font-size: 14px;
+    color: #e0e6ed;
+    margin-bottom: 50px; }
+    .form-form .form-form-wrap p.signup-link a {
+      color: #1B55E2;
+      border-bottom: 1px solid; }
+  .form-form .form-form-wrap form .field-wrapper.input {
+    position: relative;
+    padding: 11px 0 25px 0;
+    border-bottom: none; }
+    .form-form .form-form-wrap form .field-wrapper.input:focus {
+      border: 1px solid #000; }
+  .form-form .form-form-wrap form .field-wrapper.toggle-pass p {
+    font-weight: 600;
+    color: #bfc9d4;
+    margin-bottom: 0; }
+  .form-form .form-form-wrap form .field-wrapper .logged-in-user-name {
+    font-size: 37px;
+    color: #bfc9d4; }
+  .form-form .form-form-wrap form .field-wrapper svg {
+    position: absolute;
+    top: 13px;
+    color: #1B55E2;
+    fill: rgba(33, 150, 243, 0.109804); }
+  .form-form .form-form-wrap form .field-wrapper.terms_condition {
+    margin-bottom: 20px; }
+    .form-form .form-form-wrap form .field-wrapper.terms_condition label {
+      font-size: 14px;
+      color: #888ea8;
+      padding-left: 31px;
+      font-weight: 100; }
+    .form-form .form-form-wrap form .field-wrapper.terms_condition a {
+      color: #1B55E2; }
+  .form-form .form-form-wrap form .field-wrapper input {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0;
+    min-width: 50px;
+    max-width: 635px;
+    width: 100%;
+    min-height: 36px;
+    background-color: transparent;
+    border: none;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    color: #1B55E2;
+    font-size: 16px;
+    border-bottom: 1px solid #191e3a;
+    padding: 0px 0 10px 35px; }
+    .form-form .form-form-wrap form .field-wrapper input::-webkit-input-placeholder, .form-form .form-form-wrap form .field-wrapper input::-ms-input-placeholder, .form-form .form-form-wrap form .field-wrapper input::-moz-placeholder {
+      color: #d3d3d3;
+      font-size: 14px; }
+    .form-form .form-form-wrap form .field-wrapper input:focus {
+      border-bottom: 1px solid #1B55E2;
+      box-shadow: none; }
+  .form-form .form-form-wrap form .field-wrapper.toggle-pass {
+    align-self: center;
+    text-align: left; }
+    .form-form .form-form-wrap form .field-wrapper.toggle-pass .switch {
+      margin-bottom: 0;
+      vertical-align: sub;
+      margin-left: 7px; }
+  .form-form .form-form-wrap form .field-wrapper button.btn {
+    align-self: center; }
+  .form-form .form-form-wrap form .field-wrapper a.forgot-pass-link {
+    width: 100%;
+    color: #1B55E2;
+    text-align: center;
+    display: block;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-top: 15px; }
+  .form-form .form-form-wrap form .field-wrapper .n-chk .new-control-indicator {
+    top: 1px;
+    border: 1px solid #515365;
+    background-color: #515365; }
+    .form-form .form-form-wrap form .field-wrapper .n-chk .new-control-indicator:after {
+      top: 52%; }
+  .form-form .form-form-wrap form .field-wrapper.keep-logged-in {
+    margin-top: 60px; }
+    .form-form .form-form-wrap form .field-wrapper.keep-logged-in label {
+      font-size: 14px;
+      color: #888ea8;
+      padding-left: 31px;
+      font-weight: 100; }
+  .form-form .terms-conditions {
+    max-width: 480px;
+    margin: 0 auto;
+    color: #888ea8;
+    font-weight: 600;
+    margin-top: 90px; }
+    .form-form .terms-conditions a {
+      color: #1B55E2; }
+
+.form-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  min-height: auto;
+  height: 100vh;
+  width: 50%; }
+  .form-image .l-image-register {
+    background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/877231359880495114/undraw_authentication_fsn5.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #060818;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position-x: center;
+    background-position-y: center; }
+    .form-image .l-image-add-key {
+      background-image: url(https://cdn.discordapp.com/attachments/754628653467435071/872391278145450004/undraw_developer_activity_bv83.svg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #060818;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 75%;
+      background-position-x: center;
+      background-position-y: center; }
+      .form-image .l-image-wyszukaj {
+        background-image: url(https://cdn.discordapp.com/attachments/754628653467435071/872391942829383690/undraw_Search_re_x5gq.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #060818;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position-x: center;
+        background-position-y: center; }
+        .form-image .l-image-download {
+          background-image: url(https://cdn.discordapp.com/attachments/754628653467435071/872392431163826236/undraw_programming_2svr.svg);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #060818;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 75%;
+          background-position-x: center;
+          background-position-y: center; }
+          .form-image .l-image-denied {
+            background-image: url(https://cdn.discordapp.com/attachments/754628653467435071/872393833424494642/undraw_cancel_u1it.svg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #060818;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            background-position-x: center;
+            background-position-y: center; }
+            .form-image .l-image-login {
+              background-image: url(https://cdn.discordapp.com/attachments/754628653467435071/872394060797722704/undraw_authentication_fsn5.svg);
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: #060818;
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: 75%;
+              background-position-x: center;
+              background-position-y: center; }
+              .form-image .l-image-szczegoly {
+                background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/874012839042490428/undraw_Dark_analytics_re_2kvy.svg);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #060818;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 75%;
+                background-position-x: center;
+                background-position-y: center; }
+                .form-image .l-image-edytuj {
+                  background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/874025105225838672/undraw_Hacker_mindset_re_8a33.svg);
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: #060818;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: 75%;
+                  background-position-x: center;
+                  background-position-y: center; }
+                  .form-image .l-image-register-wyslano {
+                    background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/877230623369080862/undraw_message_sent_1030.svg);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #060818;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: 75%;
+                    background-position-x: center;
+                    background-position-y: center; }
+                    .form-image .l-image-dodano-klucz {
+                      background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/877230933445595176/undraw_Duplicate_re_d39g.svg);
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      background-color: #060818;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: 75%;
+                      background-position-x: center;
+                      background-position-y: center; }
+                      .form-image .l-image-posiada-dostep {
+                        background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/880566870879657992/undraw_superhero_kguv.svg);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #060818;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 75%;
+                        background-position-x: center;
+                        background-position-y: center; }
+                        .form-image .l-image-blik-poprawny {
+                          background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/880567878716383292/undraw_Mobile_pay_re_sjb8.svg);
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                          background-color: #060818;
+                          background-position: center center;
+                          background-repeat: no-repeat;
+                          background-size: 75%;
+                          background-position-x: center;
+                          background-position-y: center; }
+                          .form-image .l-image-blik-niepoprawny {
+                            background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/880567990645559386/undraw_access_denied_re_awnf.svg);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #060818;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: 75%;
+                            background-position-x: center;
+                            background-position-y: center; }
+                            .form-image .l-image-kup {
+                              background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/880571315038339122/undraw_make_it_rain_iwk4.svg);
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              background-color: #060818;
+                              background-position: center center;
+                              background-repeat: no-repeat;
+                              background-size: 75%;
+                              background-position-x: center;
+                              background-position-y: center; }
+                              .form-image .l-image-verification-success {
+                                background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/880574998593560646/undraw_Completed_re_cisp.svg);
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: #060818;
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                                background-size: 75%;
+                                background-position-x: center;
+                                background-position-y: center; }
+                                .form-image .l-image-webhook {
+                                  background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/884113053656973342/undraw_Lost_online_re_upmy.svg);
+                                  position: absolute;
+                                  top: 0;
+                                  left: 0;
+                                  width: 100%;
+                                  height: 100%;
+                                  background-color: #060818;
+                                  background-position: center center;
+                                  background-repeat: no-repeat;
+                                  background-size: 75%;
+                                  background-position-x: center;
+                                  background-position-y: center; }
+                                  .form-image .l-image-token {
+                                    background-image: url(https://cdn.discordapp.com/attachments/873504843879301160/884115914390405170/undraw_Developer_activity_re_39tg.svg);
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: #060818;
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: 75%;
+                                    background-position-x: center;
+                                    background-position-y: center; }
+
+@media (max-width: 991px) {
+  .form-form {
+    width: 100%; }
+    .form-form .form-form-wrap {
+      min-width: auto; }
+  .form-image {
+    display: none; } }
+
+@media (max-width: 575px) {
+  .form-form .form-form-wrap form .field-wrapper.toggle-pass {
+    margin-bottom: 28px; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-form .form-form-wrap {
+    width: 100%; }
+  .form-form .form-container {
+    height: 100%; } }
